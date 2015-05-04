@@ -17,7 +17,7 @@
       <td>
         <form id="userForm" action="" onsubmit="processForm()">
           <fieldset>
-            <legend>Signup</legend>
+            <legend>Feedback</legend>
             <table>
               <tr>
                 <td>First name:</td>
@@ -32,19 +32,22 @@
                 <td><input type="text" name="email" size="30"/></td>
               </tr>
               <tr>
-                <td>Username:</td>
-                <td><input type="text" name="username" size="30"/></td>
+                <td>Phone Number:</td>
+                <td><input type="text" name="phone" size="30"/></td>
               </tr>
               <tr>
-                <td>Password:</td>
-                <td><input type="text" name="password" size="30"/></td>
+                <td>Subject:</td>
+                <td><input type="text" name="subject" size="30"/></td>
               </tr>
               <tr>
-                <td>Confirm password:</td>
-                <td><input type="text" name="confirm_password" onkeyup="checkPassword(); return false;" size="30"/></td>
+                <td>Comments:</td>
+                <td><textarea type="text" name="message" rows="6" cols="32"></textarea></td>
               </tr>
               <tr>
-                <td align="center" colspan="2"><input type="submit" value="Submit"/></td>
+                <td colspan="2">Please check here if you wish to recieve a reply:
+                  <input type="checkbox" name="reply" value="yes" /></td>
+              <tr>
+                <td colspan="2" align="center"><input type="submit" value="Send Feedback"/> <input type="reset" value="Reset Form" /></td>
               </tr>
             </table>
           </<fieldset>

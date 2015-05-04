@@ -6,7 +6,7 @@
 
 <head>
   <title>Create Account</title>
-  <!-- INSERT meta tag information -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <link rel="stylesheet" type="text/css" href="src/style.css" />
 
 </head>
@@ -17,10 +17,8 @@
       <td>
         <form id="loginForm" action="" onsubmit="processForm()">
           <fieldset>
+            <legend>Login</legend>
             <table>
-              <tr>
-                <th colspan="2"><h1>Create account</h1></th>
-              </tr>
               <tr>
                 <td>Username:</td>
                 <td><input type="text" name="username" size="30"/></td>
