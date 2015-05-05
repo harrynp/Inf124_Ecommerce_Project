@@ -55,11 +55,12 @@ function validateCVC(cvc){
 
 function validateQuantity(quantity){
   var p = quantity.search(/^\d+$/);
-  if(p == 0 && parseInt(p) < 1 && parseInt(p) > 10){
+  if(p == 0 && parseInt(quantity) < 1 && parseInt(quantity) > 10){
     return true;
   }
   else{
     alert("Error: Quantity must be a number between 1-10");
+    return false;
   }
 }
 
