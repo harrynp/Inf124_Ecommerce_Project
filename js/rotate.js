@@ -9,7 +9,14 @@ var imageCounter = 0;
 function rotate()
 {
     var imageObject = document.getElementById('rotation');
+    var linkObject = document.getElementById('rotation_link');
     imageObject.src = imageArray[imageCounter];
+    if(imageCounter > 2){
+      linkObject.href = "product" + (imageCounter + 1).toString() + ".php";
+    }
+    else{
+      linkObject.href = "ps4.php";
+    }
     ++imageCounter;
     if (imageCounter == 6) imageCounter = 0;
 }

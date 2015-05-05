@@ -24,7 +24,7 @@
           <p class="Description">with a game that you would be satisfied with.</p>
         </td>
         <td>
-          <img id="rotation" src="" alt="Video Games" width="300px" height="400px" />
+          <a id="rotation_link" href=""><img id="rotation" src="" alt="Video Games" width="300px" height="400px" /></a>
         </td>
         <td>
         </td>
