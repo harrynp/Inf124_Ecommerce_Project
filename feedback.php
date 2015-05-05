@@ -15,7 +15,7 @@
   <div>
     <table>
       <td>
-        <form id="feedbackForm" onsubmit="processForm()"
+        <form id="feedbackForm" onsubmit="validateFeedBackForm()"
         action = "scripts/processFeedback.php" method = "post">
           <fieldset>
             <legend>Feedback</legend>
@@ -56,7 +56,7 @@
     </table>
   </div>
 
-  <script text="text/javascript" src="js/create_account.js"></script>
+  <script text="text/javascript" src="js/feedback.js"></script>
 </body>
 
 
