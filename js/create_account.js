@@ -1,5 +1,5 @@
 function validateEmail(address){
-  var p = address.search(/.+@.+/);
+  var p = address.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})$/);
   if (p == 0)
   return true;
   else

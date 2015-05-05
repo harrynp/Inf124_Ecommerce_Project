@@ -15,7 +15,7 @@
   <div>
     <table>
       <td>
-        <form id="userForm" action="" onsubmit="processForm()">
+        <form id="feedbackForm" action="" onsubmit="processForm()">
           <fieldset>
             <legend>Feedback</legend>
             <table>
