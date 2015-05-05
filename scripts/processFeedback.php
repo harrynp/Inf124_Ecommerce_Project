@@ -27,7 +27,12 @@ $headerToClient = "From: ahsanm@uci.edu\r\n";
 mail($_POST['email'], "Re: ".$_POST['subject'], $messageToClient, $headerToClient);
 
 //Confirmation for the user
-
+$display = str_replace("\r\n", "<br />\r\n", $messageToClient);
+$display =
+  "<html><head><title>Your Message</title></head><body><tt>".
+  $display.
+    "<tt></body></html>";
+echo $display;
 
 
 ?>

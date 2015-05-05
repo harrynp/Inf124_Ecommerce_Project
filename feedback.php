@@ -15,7 +15,7 @@
   <div>
     <table>
       <td>
-        <form id="feedbackForm" action="" onsubmit="processForm()"
+        <form id="feedbackForm" onsubmit="processForm()"
         action = "scripts/processFeedback.php" method = "post">
           <fieldset>
             <legend>Feedback</legend>
@@ -51,7 +51,7 @@
                 <td colspan="2" align="center"><input type="submit" value="Send Feedback"/> <input type="reset" value="Reset Form" /></td>
               </tr>
             </table>
-          </<fieldset>
+          </fieldset>
         </form>
     </table>
   </div>
