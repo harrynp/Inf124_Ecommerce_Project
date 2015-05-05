@@ -47,7 +47,7 @@
                 <td align="center" colspan="2"><input type="submit" value="Submit"/></td>
               </tr>
             </table>
-          </<fieldset>
+          </fieldset>
         </form>
     </table>
   </div>
