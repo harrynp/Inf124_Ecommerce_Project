@@ -55,7 +55,7 @@ function validateCVC(cvc){
 
 function validateQuantity(quantity){
   var p = quantity.search(/^\d+$/);
-  if(p == 0 && parseInt(p) > 0 && parseInt(p) < 11){
+  if(p == 0 && parseInt(p) < 1 && parseInt(p) > 10){
     return true;
   }
   else{
