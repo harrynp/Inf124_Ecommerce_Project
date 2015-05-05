@@ -34,5 +34,13 @@ $display =
     "<tt></body></html>";
 echo $display;
 
+//Log the message in a file
+  or die("Error: Could not open the log file.");
+fwrite($fileVar, "\n---------------------------------------------\n")
+  or die("Error: Could not write to the lg file.");
+fwrite($fileVar, "Date received: ".data("jS \of F, Y \a\\t H:i:s\n"))
+  or die("Error: Could not write to the log file.");
+fwrite($fileVar, $messageToBusiness)
+  or die("Error: Could not write to the log file.");
 
 ?>
