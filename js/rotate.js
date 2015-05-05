@@ -12,7 +12,8 @@ function rotate()
     var linkObject = document.getElementById('rotation_link');
     imageObject.src = imageArray[imageCounter];
     if(imageCounter > 2){
-      linkObject.href = "product" + (imageCounter + 1).toString() + ".php";
+      // linkObject.href = "product" + (imageCounter + 1).toString() + ".php";
+      linkObject.href = "3ds.php";
     }
     else{
       linkObject.href = "ps4.php";

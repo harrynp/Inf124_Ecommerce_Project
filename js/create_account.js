@@ -1,11 +1,21 @@
+function validateName(name){
+  var p = name.search(/^[-'\w\s]+$/);
+  if (p == 0){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
 function validateEmail(address){
   var p = address.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})$/);
   if (p == 0)
-  return true;
+    return true;
   else
   {
-  alert("Error: Invalid e-mail address.");
-  return false;
+    alert("Error: Invalid e-mail address.");
+    return false;
   }
 }
 
@@ -44,6 +54,8 @@ function processForm(){
   var username = document.getElementById("userForm").username.value;
   var password = document.getElementById("userForm").password.value;
   var confirm_password = document.getElementById("userForm").confirm_password.value;
+  valid = validateName(first_name);
+  valid = validateName(last_name);
   valid = validateEmail(email);
 
   var result = "Account Created with following info: Username: " + username + " Password: " + password + " Email: " + email;
