@@ -9,6 +9,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <link rel="stylesheet" type="text/css" href="src/style.css" />
   <script type="text/javascript" src="js/rotate.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
 </head>
 
 <body onload="startRotation()">
@@ -17,12 +18,18 @@
       <!--#include virtual="common/logo.php"-->
       <tr>
         <td>
-          <p class="Description">Our goal is to sell video games.</p>
+          <h3>Welcome to Bros Game Shop!</h3>
+          <p class="Description">We offer only the best video games at a unbeatable price.</p>
+          <p class="Description">Our goal here at Bros Game Shop is to make sure you leave </p>
+          <p class="Description">with a game that you would be satisfied with.</p>
         </td>
         <td>
           <img id="rotation" src="" alt="Video Games" width="300px" height="400px" />
         </td>
+        <td>
+        </td>
       </tr>
+      <!--#include virtual="common/footer.php"-->
     </table>
   </div>
 </body>
