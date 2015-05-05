@@ -15,7 +15,8 @@
   <div>
     <table>
       <td>
-        <form id="feedbackForm" action="" onsubmit="processForm()">
+        <form id="feedbackForm" action="" onsubmit="processForm()"
+        action = "scripts/processFeedback.php" method = "post">
           <fieldset>
             <legend>Feedback</legend>
             <table>
