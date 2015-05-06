@@ -1,5 +1,15 @@
 <?php
 //processOrder.php
+$product1_quantity = 0;
+$product2_quantity = 0;
+
+if(isset($_POST[product1])){
+  $product1_quantity = $_POST['product1_quantity'];
+}
+
+if(isset($_POST[product2])){
+  $product2_quantity = $_POST['product2_quantity'];
+}
 
 //Construct the message to be sent to the business
 $messageToBusiness =
@@ -9,8 +19,8 @@ $messageToBusiness =
   "Address: ".$_POST['address']."\r\n" .
   "Credit Card: " .$_POST['credit_card']."\r\n".
   "CVC: " .$_POST['cvc']."\r\n".
-  "Fire Emblem IF: Black Night Kingdom x" .$_POST['product1_qualtity']. "\r\n".
-  "Fire Emblem IF: White Night Kingdom x" .$_POST['product2_qualtity']. "\r\n";
+  "Fire Emblem IF: Black Night Kingdom x" .$product1_quantity. "\r\n".
+  "Fire Emblem IF: White Night Kingdom x" .$product2_quantity. "\r\n";
 
 
 //Send e-mail feedback message to business
