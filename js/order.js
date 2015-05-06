@@ -64,8 +64,12 @@ function validateQuantity(quantity){
   }
 }
 
+function validateForm(first_name, last_name, email, credit_card, cvc){
+  return validateName(first_name) && validateName(last_name) && validateEmail(email)
+        && validateCreditCard(credit_card) && validateCVC(cvc);
+}
+
 function processForm(){
-  var valid = true;
   var product1 = document.getElementById("orderForm").product1.checked;
   if(product1){
     var product1_quantity = document.getElementById('orderForm').product1_quantity.value
@@ -82,11 +86,6 @@ function processForm(){
   var address = document.getElementById("orderForm").address.value;
   var credit_card = document.getElementById("orderForm").credit_card.value;
   var cvc = document.getElementById("orderForm").cvc.value;
-  valid = validateName(first_name);
-  valid = validateName(last_name);
-  valid = validateEmail(email);
-  valid = validateCreditCard(credit_card);
-  valid = validateCVC(cvc);
 
   var result = "Order has been made with following info:\n";
   result = result + "Name: " + first_name + " " + last_name + "\n";
@@ -100,7 +99,7 @@ function processForm(){
   if(product2){
     result = result + "Fire Emblem IF: White Night Kingdom" + " x" + product2_quantity + "\n";
   }
-  if(valid){
+  if(validateForm(first_name, last_name, email, credit_card, cvc)){
     alert(result);
   }
 

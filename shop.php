@@ -17,18 +17,18 @@
       <!--#include virtual="common/logo.php"-->
       <tr>
         <td align="center">
-          <a href="product1.php"><img src="images/product1.jpg" alt="Fire Emblem IF: Dark Night Kingdom" width="180px" height="180px"/></a>
+          <a href="order.php"><img src="images/product1.jpg" alt="Fire Emblem IF: Dark Night Kingdom" width="180px" height="180px"/></a>
         </td>
         <td align="center">
-          <a href="product2.php"><img src="images/product2.jpg" alt="Fire Emblem IF: White Night Kingdom" width="180px" height="180px"/></a>
+          <a href="order.php"><img src="images/product2.jpg" alt="Fire Emblem IF: White Night Kingdom" width="180px" height="180px"/></a>
         </td>
       </tr>
       <tr>
         <td align="center">
-          <a href="product1.php">Fire Emblem IF:Dark Night Kingdom</a>
+          <a href="order.php">Fire Emblem IF:Dark Night Kingdom</a>
         </td>
         <td align="center">
-          <a href="product2.php">Fire Emblem IF:White Night Kingdom</a>
+          <a href="order.php">Fire Emblem IF:White Night Kingdom</a>
         </td>
         <td>
         </td>

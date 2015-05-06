@@ -15,7 +15,8 @@
   <div>
     <table>
       <td>
-        <form id="orderForm" action="" onsubmit="processForm()">
+        <form id="orderForm" action="" onsubmit="processForm()"
+          action = "scripts/processOrder.php" method = "post">
           <fieldset>
             <legend>Order</legend>
             <table>
@@ -73,7 +74,7 @@
                 <td align="center" colspan="2"><input type="submit" value="Submit"/></td>
               </tr>
             </table>
-          </<fieldset>
+          </fieldset>
         </form>
     </table>
   </div>
