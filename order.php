@@ -21,7 +21,7 @@
             <legend>Order</legend>
             <table>
               <tr>
-                <td rowspan="2"><img src="images/product1.jpg" alt="Fire Emblem IF: Black Night Kingdom" width="100px" height="100px"/></td>
+                <td rowspan="2"><img src="images/product1.jpg" alt="Fire Emblem IF: Black Night Kingdom" width="100px" height="100px"/><p align=center>$49.99</p></td>
                 <td>
                   <p>Buy:</p>
                   <input type="checkbox" name="product1" value="yes">
@@ -34,7 +34,7 @@
                 </td>
               </tr>
               <tr>
-                <td rowspan="2"><img src="images/product2.jpg" alt="Fire Emblem IF: White Night Kingdom" width="100px" height="100px"/></td>
+                <td rowspan="2"><img src="images/product2.jpg" alt="Fire Emblem IF: White Night Kingdom" width="100px" height="100px"/><p align=center>$39.99</p></td>
                 <td>
                   <p>Buy:</p>
                   <input type="checkbox" name="product2" value="yes">

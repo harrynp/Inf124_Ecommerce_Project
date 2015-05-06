@@ -88,17 +88,22 @@ function processForm(){
   var cvc = document.getElementById("orderForm").cvc.value;
 
   var result = "Order has been made with following info:\n";
-  result = result + "Name: " + first_name + " " + last_name + "\n";
-  result = result + "Email: " + email + "\n";
-  result = result + "Address: " + address + "\n";
-  result = result + "Credit Card: " + credit_card + "\n";
-  result = result + "CVC: " + cvc + "\n";
+  result += "Name: " + first_name + " " + last_name + "\n";
+  result += "Email: " + email + "\n";
+  result += "Address: " + address + "\n";
+  result += "Credit Card: " + credit_card + "\n";
+  result += "CVC: " + cvc + "\n";
+  var total_product1_cost = 0;
+  var total_product2_cost = 0;
   if(product1){
-    result = result + "Fire Emblem IF: Black Night Kingdom" + " x" + product1_quantity + "\n";
+    total_product1_cost = 49.99 * parseInt(quantity);
+    result += "Fire Emblem IF: Black Night Kingdom" + " x" + product1_quantity + "\n" + "Cost: " + total_product1_cost.toString();
   }
   if(product2){
-    result = result + "Fire Emblem IF: White Night Kingdom" + " x" + product2_quantity + "\n";
+    total_product2_cost = 39.99 * parseInt(quantity);
+    result += "Fire Emblem IF: White Night Kingdom" + " x" + product2_quantity + "\n" + "Cost: " + total_product2_cost.toString();
   }
+  result += "Total Cost: " + (total_product1_cost + total_product2_cost).toString();
   if(validateForm(first_name, last_name, email, credit_card, cvc)){
     alert(result);
   }

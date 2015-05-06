@@ -33,6 +33,16 @@
         <td>
         </td>
       </tr>
+      <tr>
+        <td align="center">
+          <a href="order.php">$49.99</a>
+        </td>
+        <td align="center">
+          <a href="order.php">$39.99</a>
+        </td>
+        <td>
+        </td>
+      </tr>
       <!--#include virtual="common/footer.php"-->
     </table>
   </div>
