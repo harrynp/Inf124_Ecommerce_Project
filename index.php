@@ -22,6 +22,10 @@
           <p class="Description">We offer only the best video games at a unbeatable price.</p>
           <p class="Description">Our goal here at Bros Game Shop is to make sure you leave </p>
           <p class="Description">with a game that you would be satisfied with.</p>
+          <br/>
+          <?php
+            echo "Current time: ".date("jS \of F, Y \a\\t H:i:s\n")
+          ?>
         </td>
         <td>
           <a id="rotation_link" href=""><img id="rotation" src="" alt="Video Games" width="300px" height="400px" /></a>
