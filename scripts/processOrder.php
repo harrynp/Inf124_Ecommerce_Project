@@ -19,8 +19,9 @@ $messageToBusiness =
   "Address: ".$_POST['address']."\r\n" .
   "Credit Card: " .$_POST['credit_card']."\r\n".
   "CVC: " .$_POST['cvc']."\r\n".
-  "Fire Emblem IF: Black Night Kingdom x" .$product1_quantity. "\r\n".
-  "Fire Emblem IF: White Night Kingdom x" .$product2_quantity. "\r\n";
+  "Fire Emblem IF: Dark Night Kingdom x" .$product1_quantity. " $". 49.99*$product1_quantity.  "\r\n".
+  "Fire Emblem IF: White Night Kingdom x" .$product2_quantity. " $". 39.99*$product2_quantity. "\r\n".
+  "Total: $". (49.99*$product1_quantity + 39.99*$product2_quantity). "\r\n";
 
 
 //Send e-mail feedback message to business

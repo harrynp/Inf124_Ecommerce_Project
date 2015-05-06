@@ -96,12 +96,14 @@ function processForm(){
   var total_product1_cost = 0;
   var total_product2_cost = 0;
   if(product1){
-    total_product1_cost = 49.99 * parseInt(quantity);
-    result += "Fire Emblem IF: Black Night Kingdom" + " x" + product1_quantity + "\n" + "Cost: " + total_product1_cost.toString();
+    total_product1_cost = 49.99 * parseInt(product1_quantity);
+    total_product1_cost = Math.round(total_product1_cost * 100)/100
+    result += "Fire Emblem IF: Black Night Kingdom" + " x" + product1_quantity + "\n" + "Cost: " + total_product1_cost.toString() + "\n";
   }
   if(product2){
-    total_product2_cost = 39.99 * parseInt(quantity);
-    result += "Fire Emblem IF: White Night Kingdom" + " x" + product2_quantity + "\n" + "Cost: " + total_product2_cost.toString();
+    total_product2_cost = 39.99 * parseInt(product2_quantity);
+    total_product2_cost = Math.round(total_product2_cost * 100)/100
+    result += "Fire Emblem IF: White Night Kingdom" + " x" + product2_quantity + "\n" + "Cost: " + total_product2_cost.toString() + "\n";
   }
   result += "Total Cost: " + (total_product1_cost + total_product2_cost).toString();
   if(validateForm(first_name, last_name, email, credit_card, cvc)){
