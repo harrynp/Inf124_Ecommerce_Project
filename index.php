@@ -26,6 +26,8 @@
           <?php
             echo "Current time: ".date("jS \of F, Y \a\\t H:i:s\n")
           ?>
+          <p class="Description">Please contact us as (310)555-5555</p>
+          <p class="Description">We are located at 100 Bren Events Center Drive Irvine, CA 92697-1500</p>
         </td>
         <td>
           <a id="rotation_link" href=""><img id="rotation" src="" alt="Video Games" width="300px" height="400px" /></a>
